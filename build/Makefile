@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rimuru/插值
+CMAKE_SOURCE_DIR = /home/rimuru/study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rimuru/插值/build
+CMAKE_BINARY_DIR = /home/rimuru/study/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rimuru/插值/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rimuru/study/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rimuru/插值/build/CMakeFiles /home/rimuru/插值/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rimuru/study/build/CMakeFiles /home/rimuru/study/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rimuru/插值/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rimuru/study/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -158,6 +158,19 @@ lineral: cmake_check_build_system
 lineral/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/build
 .PHONY : lineral/fast
+
+#=============================================================================
+# Target rules for targets named nearest
+
+# Build rule for target.
+nearest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nearest
+.PHONY : nearest
+
+# fast build rule for target.
+nearest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nearest.dir/build.make CMakeFiles/nearest.dir/build
+.PHONY : nearest/fast
 
 #=============================================================================
 # Target rules for targets named Experimental
@@ -523,29 +536,53 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+nearest.o: nearest.cpp.o
+.PHONY : nearest.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/main.cpp.o
-.PHONY : main.cpp.o
+nearest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nearest.dir/build.make CMakeFiles/nearest.dir/nearest.cpp.o
+.PHONY : nearest.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+nearest.i: nearest.cpp.i
+.PHONY : nearest.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/main.cpp.i
-.PHONY : main.cpp.i
+nearest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nearest.dir/build.make CMakeFiles/nearest.dir/nearest.cpp.i
+.PHONY : nearest.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+nearest.s: nearest.cpp.s
+.PHONY : nearest.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/main.cpp.s
-.PHONY : main.cpp.s
+nearest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nearest.dir/build.make CMakeFiles/nearest.dir/nearest.cpp.s
+.PHONY : nearest.cpp.s
+
+twolineral.o: twolineral.cpp.o
+.PHONY : twolineral.o
+
+# target to build an object file
+twolineral.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/twolineral.cpp.o
+.PHONY : twolineral.cpp.o
+
+twolineral.i: twolineral.cpp.i
+.PHONY : twolineral.i
+
+# target to preprocess a source file
+twolineral.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/twolineral.cpp.i
+.PHONY : twolineral.cpp.i
+
+twolineral.s: twolineral.cpp.s
+.PHONY : twolineral.s
+
+# target to generate assembly for a file
+twolineral.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineral.dir/build.make CMakeFiles/lineral.dir/twolineral.cpp.s
+.PHONY : twolineral.cpp.s
 
 # Help Target
 help:
@@ -587,9 +624,13 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... lineral"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... nearest"
+	@echo "... nearest.o"
+	@echo "... nearest.i"
+	@echo "... nearest.s"
+	@echo "... twolineral.o"
+	@echo "... twolineral.i"
+	@echo "... twolineral.s"
 .PHONY : help
 
 

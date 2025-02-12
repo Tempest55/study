@@ -53,7 +53,7 @@ int main() {
     }
 
     // 定义目标尺寸（例如放大到原图的2倍）
-    Size target_size(img.cols * 2, img.rows * 2);
+    Size target_size(img.cols * 0.5, img.rows * 0.5);
 
     // 使用手写方法缩放
     Mat custom_result = nearestNeighborInterpolation(img, target_size);

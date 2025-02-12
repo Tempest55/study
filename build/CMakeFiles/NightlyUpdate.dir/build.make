@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rimuru/插值
+CMAKE_SOURCE_DIR = /home/rimuru/study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rimuru/插值/build
+CMAKE_BINARY_DIR = /home/rimuru/study/build
 
 # Utility rule file for NightlyUpdate.
 
@@ -82,6 +82,6 @@ CMakeFiles/NightlyUpdate.dir/clean:
 .PHONY : CMakeFiles/NightlyUpdate.dir/clean
 
 CMakeFiles/NightlyUpdate.dir/depend:
-	cd /home/rimuru/插值/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rimuru/插值 /home/rimuru/插值 /home/rimuru/插值/build /home/rimuru/插值/build /home/rimuru/插值/build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rimuru/study/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rimuru/study /home/rimuru/study /home/rimuru/study/build /home/rimuru/study/build /home/rimuru/study/build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyUpdate.dir/depend
 

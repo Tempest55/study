@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rimuru/插值/main.cpp" "CMakeFiles/lineral.dir/main.cpp.o" "gcc" "CMakeFiles/lineral.dir/main.cpp.o.d"
+  "/home/rimuru/study/twolineral.cpp" "CMakeFiles/lineral.dir/twolineral.cpp.o" "gcc" "CMakeFiles/lineral.dir/twolineral.cpp.o.d"
   )
 
 # Targets to which this target links.

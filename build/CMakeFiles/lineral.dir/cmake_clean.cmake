@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lineral.dir/main.cpp.o"
-  "CMakeFiles/lineral.dir/main.cpp.o.d"
+  "CMakeFiles/lineral.dir/twolineral.cpp.o"
+  "CMakeFiles/lineral.dir/twolineral.cpp.o.d"
   "lineral"
   "lineral.pdb"
 )

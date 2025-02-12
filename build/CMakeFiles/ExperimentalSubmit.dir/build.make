@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rimuru/插值
+CMAKE_SOURCE_DIR = /home/rimuru/study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rimuru/插值/build
+CMAKE_BINARY_DIR = /home/rimuru/study/build
 
 # Utility rule file for ExperimentalSubmit.
 
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalSubmit.dir/clean:
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/clean
 
 CMakeFiles/ExperimentalSubmit.dir/depend:
-	cd /home/rimuru/插值/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rimuru/插值 /home/rimuru/插值 /home/rimuru/插值/build /home/rimuru/插值/build /home/rimuru/插值/build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rimuru/study/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rimuru/study /home/rimuru/study /home/rimuru/study/build /home/rimuru/study/build /home/rimuru/study/build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/depend
 
