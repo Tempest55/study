@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/rimuru/插值/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/lineral.dir/main.cpp.o -c /home/rimuru/插值/main.cpp",
+  "file": "/home/rimuru/插值/main.cpp"
+}
+]

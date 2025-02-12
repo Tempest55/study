@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20250212-0213-Experimental"
+	Name="rimuru-Legion-Y9000P-IRX8"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="rimuru-Legion-Y9000P-IRX8"
+	OSRelease="6.8.0-51-generic"
+	OSVersion="#52~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Dec  9 15:00:52 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="183"
+	ProcessorCacheSize="36864"
+	NumberOfLogicalCPU="32"
+	NumberOfPhysicalCPU="24"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="31895"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="799.602"
+	>
+	<Testing>
+		<StartDateTime>Feb 12 10:18 CST</StartDateTime>
+		<StartTestTime>1739326710</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 12 10:18 CST</EndDateTime>
+		<EndTestTime>1739326710</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

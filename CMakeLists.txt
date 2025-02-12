@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.5.0)
+project(lineral VERSION 0.1.0 LANGUAGES C CXX)
+
+add_executable(lineral main.cpp)
+find_package(OpenCV REQUIRED)
+include(CTest)
+enable_testing()
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
